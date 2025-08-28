@@ -4,6 +4,7 @@ import Vue from '@vitejs/plugin-vue'
 import Vuetify, { transformAssetUrls } from 'vite-plugin-vuetify'
 import Fonts from 'unplugin-fonts/vite'
 import vueDevTools from 'vite-plugin-vue-devtools'
+import { VitePWA } from 'vite-plugin-pwa'
 
 // Utilities
 import { defineConfig } from 'vite'
@@ -30,6 +31,22 @@ export default defineConfig({
         ],
       },
     }),
+    VitePWA({
+      devOptions: {
+        enabled: true
+      },
+      manifest: {
+        short_name: 'Tamplate',
+        name: 'Template Progressive Web App',
+        icons: [
+          { src: '/Logo-192x192.png', sizes: '192x192', type: 'image/png' },
+          { src: '/Logo-512x512.png', sizes: '512x512', type: 'image/png' }
+        ],
+        start_url: '/',
+        display: 'standalone'
+      },
+      workbox: {}
+    })
   ],
   optimizeDeps: {
     exclude: ['vuetify'],

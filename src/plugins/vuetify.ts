@@ -6,27 +6,29 @@ import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import { VIconBtn } from 'vuetify/labs/VIconBtn'
 
-// Brand colors
-const brandLightBlue    = '#5BC0EB'
-const brandLightBlueDark= '#4AA0CC'
-const brandDarkGray     = '#333333'
-const brandDarkGrayDark = '#1F1F1F'
+// Theme colors
+const primary    = '#5BC0EB'
+const primaryDarken1= '#4AA0CC'
+const secondary     = '#333333'
+const secondaryDarken1 = '#1F1F1F'
+const backgroundLight = '#f5f9ff'
+const backgroundDark = '#1f2a44'
 
 const customLightTheme = {
   dark: false,
   colors: {
-    background: '#f5f9ff',
+    background: backgroundLight,
     surface:    '#ffffff',
     'surface-bright': '#FFFFFF',
     'surface-light':  '#F5F5F5',
     'surface-variant':'#E0E0E0',
     'on-surface-variant': '#424242',
 
-    primary: brandLightBlue,
-    'primary-darken-1': brandLightBlueDark,
+    primary: primary,
+    'primary-darken-1': primaryDarken1,
 
-    secondary: brandDarkGray,
-    'secondary-darken-1': brandDarkGrayDark,
+    secondary: secondary,
+    'secondary-darken-1': secondaryDarken1,
 
     error:   '#B00020',
     info:    '#2196F3',
@@ -57,18 +59,18 @@ const customLightTheme = {
 const customDarkTheme = {
   dark: true,
   colors: {
-    background: '#1f2a44',
+    background: backgroundDark,
     surface:    '#2C2C2C',
     'surface-bright': '#2C2C2C',
     'surface-light':  '#333333',
     'surface-variant':'#424242',
     'on-surface-variant': '#EEEEEE',
 
-    primary: brandLightBlue,
-    'primary-darken-1': brandLightBlueDark,
+    primary: primary,
+    'primary-darken-1': primaryDarken1,
 
-    secondary: brandDarkGray,
-    'secondary-darken-1': brandDarkGrayDark,
+    secondary: secondary,
+    'secondary-darken-1': secondaryDarken1,
 
     error:   '#CF6679',
     info:    '#64B5F6',
