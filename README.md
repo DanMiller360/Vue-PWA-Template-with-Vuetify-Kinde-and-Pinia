@@ -1,8 +1,8 @@
-# Vue PWA Template (Vuetify + Kinde + Pinia + BFF)
+# Vue PWA Typescript Template (Vuetify + Kinde + Pinia + BFF)
 
 A production-ready **Progressive Web App (PWA)** template built with:
 
-* [Vue 3](https://vuejs.org/) + [Vite](https://vitejs.dev/)
+* [Vue 3 with Typescript](https://vuejs.org/) + [Vite](https://vitejs.dev/)
 * [Vuetify](https://vuetifyjs.com/) for UI components
 * [Pinia](https://pinia.vuejs.org/) for state management (auth + account info)
 * [Kinde](https://kinde.com/) for authentication
