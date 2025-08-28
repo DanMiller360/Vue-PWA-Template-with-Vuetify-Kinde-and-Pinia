@@ -7,7 +7,7 @@ import { createVuetify } from 'vuetify'
 import { VIconBtn } from 'vuetify/labs/VIconBtn'
 
 // Brand colors
-const brandLightBlue    = '#5BC0EB'   // sky blue from logo
+const brandLightBlue    = '#5BC0EB'
 const brandLightBlueDark= '#4AA0CC'
 const brandDarkGray     = '#333333'
 const brandDarkGrayDark = '#1F1F1F'

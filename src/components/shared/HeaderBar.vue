@@ -31,22 +31,40 @@
                 cover
             />
 
-            <v-btn 
-                v-if="authStore.isAuthenticated"
-                variant="elevated"
-                color="primary"
-                rounded="lg"
-                prepend-icon="mdi-account-circle"
-                @click="logout"
-            >
-                Logout
-            </v-btn>
-                
-            <v-icon-btn 
-                color="primary"
-                icon="mdi-brightness-6"
-                @click="toggleTheme"
-            />
+            <v-menu>
+                <template v-slot:activator="{ props }">
+                    <v-icon-btn 
+                        color="primary"
+                        icon-size="30"
+                        icon="mdi-account-circle" 
+                        variant="text" 
+                        v-bind="props"/>
+                </template>
+
+                <v-list>
+                    <v-list-item @click="logout">
+                        <v-btn 
+                            variant="elevated"
+                            color="primary"
+                            rounded="lg"
+                            prepend-icon="mdi-logout"
+                        >
+                            Logout
+                        </v-btn>
+                    </v-list-item>
+
+                    <v-list-item @click="toggleTheme">
+                        <v-btn 
+                            variant="elevated"
+                            color="primary"
+                            rounded="lg"
+                            prepend-icon="mdi-brightness-6"
+                        >
+                            Toggle Theme
+                        </v-btn>
+                    </v-list-item>
+                </v-list>
+            </v-menu>
         </v-container>
     </v-app-bar>
 </template>
