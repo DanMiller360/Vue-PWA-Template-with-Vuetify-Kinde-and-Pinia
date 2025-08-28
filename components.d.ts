@@ -8,23 +8,14 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
-    AccountPage: typeof import('./src/components/pages/AccountPage.vue')['default']
     CallbackPage: typeof import('./src/components/pages/CallbackPage.vue')['default']
-    copy: typeof import('./src/components/pages/FlashCardSubjectsPage copy.vue')['default']
-    CreateNewFlashCardDialog: typeof import('./src/components/dialogs/CreateNewFlashCardDialog.vue')['default']
     ErrorState: typeof import('./src/components/shared/ErrorState.vue')['default']
-    FlashCardChaptersPage: typeof import('./src/components/pages/FlashCardChaptersPage.vue')['default']
-    FlashCardGradesPage: typeof import('./src/components/pages/FlashCardGradesPage.vue')['default']
-    FlashCardsPage: typeof import('./src/components/pages/FlashCardsPage.vue')['default']
-    FlashCardSubjectsPage: typeof import('./src/components/pages/FlashCardSubjectsPage.vue')['default']
-    FlashCardSubjectssPage: typeof import('./src/components/pages/FlashCardSubjectssPage.vue')['default']
     FooterBar: typeof import('./src/components/shared/FooterBar.vue')['default']
     HeaderBar: typeof import('./src/components/shared/HeaderBar.vue')['default']
+    HomePage: typeof import('./src/components/pages/HomePage.vue')['default']
     LandingPage: typeof import('./src/components/pages/LandingPage.vue')['default']
     LoadingState: typeof import('./src/components/shared/LoadingState.vue')['default']
-    NotesPage: typeof import('./src/components/pages/NotesPage.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    WelcomePage: typeof import('./src/components/pages/WelcomePage.vue')['default']
   }
 }

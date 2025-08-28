@@ -20,7 +20,7 @@
     <!-- override the built-in headline -->
     <template #title>
       <div class="text-h3 mt-6">
-        Template Project
+        Template
       </div>
     </template>
     
@@ -32,7 +32,7 @@
             text="Already have an account?"
             title="Login"
             min-width="200"
-            color="secondary"
+            color="primary"
             clickable
             @click="login"
           ></v-card>
@@ -44,7 +44,7 @@
             text="Create a new account."
             title="Sign Up"
             min-width="200"
-            color="secondary"
+            color="primary"
             @click="signUp"
           ></v-card>
         </v-col>

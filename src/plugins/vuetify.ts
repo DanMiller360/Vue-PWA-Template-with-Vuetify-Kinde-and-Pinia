@@ -6,24 +6,33 @@ import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
 import { VIconBtn } from 'vuetify/labs/VIconBtn'
 
+// Brand colors
+const brandLightBlue    = '#5BC0EB'   // sky blue from logo
+const brandLightBlueDark= '#4AA0CC'
+const brandDarkGray     = '#333333'
+const brandDarkGrayDark = '#1F1F1F'
+
 const customLightTheme = {
   dark: false,
   colors: {
     background: '#f5f9ff',
-    surface: '#6b7280',
+    surface:    '#ffffff',
     'surface-bright': '#FFFFFF',
-    'surface-light': '#F5F5F5',
-    'surface-variant': '#E0E0E0',
+    'surface-light':  '#F5F5F5',
+    'surface-variant':'#E0E0E0',
     'on-surface-variant': '#424242',
-    primary:'#f78f4f',
-    'primary-darken-1':'#d15050',
-    secondary:'#282fff',
-    'secondary-darken-1':'#6be4ff',
-    error: '#B00020',
-    info: '#2196F3',
+
+    primary: brandLightBlue,
+    'primary-darken-1': brandLightBlueDark,
+
+    secondary: brandDarkGray,
+    'secondary-darken-1': brandDarkGrayDark,
+
+    error:   '#B00020',
+    info:    '#2196F3',
     success: '#4CAF50',
     warning: '#FB8C00',
-    transparent: '#00000000'
+    transparent: '#00000000',
   },
   variables: {
     'border-color': '#000000',
@@ -38,10 +47,10 @@ const customLightTheme = {
     'activated-opacity': 0.12,
     'pressed-opacity': 0.12,
     'dragged-opacity': 0.08,
-    'theme-kbd': '#212529',
+    'theme-kbd':    '#212529',
     'theme-on-kbd': '#FFFFFF',
-    'theme-code': '#F5F5F5',
-    'theme-on-code': '#000000',
+    'theme-code':   '#F5F5F5',
+    'theme-on-code':'#000000',
   }
 }
 
@@ -49,20 +58,23 @@ const customDarkTheme = {
   dark: true,
   colors: {
     background: '#1f2a44',
-    surface: '#6b7280',
+    surface:    '#2C2C2C',
     'surface-bright': '#2C2C2C',
-    'surface-light': '#333333',
-    'surface-variant': '#424242',
+    'surface-light':  '#333333',
+    'surface-variant':'#424242',
     'on-surface-variant': '#EEEEEE',
-    primary:'#f78f4f',
-    'primary-darken-1':'#d15050',
-    secondary:'#282fff',
-    'secondary-darken-1':'#6be4ff',
-    error: '#CF6679',
-    info: '#64B5F6',
+
+    primary: brandLightBlue,
+    'primary-darken-1': brandLightBlueDark,
+
+    secondary: brandDarkGray,
+    'secondary-darken-1': brandDarkGrayDark,
+
+    error:   '#CF6679',
+    info:    '#64B5F6',
     success: '#81C784',
     warning: '#FFB74D',
-    transparent: '#00000000'
+    transparent: '#00000000',
   },
   variables: {
     'border-color': '#FFFFFF',
@@ -77,10 +89,10 @@ const customDarkTheme = {
     'activated-opacity': 0.24,
     'pressed-opacity': 0.16,
     'dragged-opacity': 0.16,
-    'theme-kbd': '#F5F5F5',
+    'theme-kbd':    '#F5F5F5',
     'theme-on-kbd': '#000000',
-    'theme-code': '#1E1E1E',
-    'theme-on-code': '#FFFFFF',
+    'theme-code':   '#1E1E1E',
+    'theme-on-code':'#FFFFFF',
   }
 }
 
@@ -88,8 +100,8 @@ export default createVuetify({
   theme: {
     defaultTheme: 'customDarkTheme',
     themes: {
-      customLightTheme: customLightTheme,
-      customDarkTheme: customDarkTheme,
+      customLightTheme,
+      customDarkTheme,
     },
   },
   components: {

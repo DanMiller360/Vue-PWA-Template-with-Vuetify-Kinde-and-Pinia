@@ -9,7 +9,7 @@
   onMounted(async () => {
       await authStore.checkAuth()
       if (authStore.isAuthenticated) {
-          router.push({ name: 'WelcomePage'})
+          router.push({ name: 'HomePage'})
       } else if (!authStore.isAuthenticated) {
           router.push({ name: 'LandingPage'})
       }
