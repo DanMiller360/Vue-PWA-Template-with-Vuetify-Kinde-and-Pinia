@@ -42,8 +42,10 @@
                 </template>
 
                 <v-list>
-                    <v-list-item @click="logout">
-                        <v-btn 
+                    <v-list-item 
+                        v-if="authStore.isAuthenticated"
+                        @click="logout">
+                        <v-btn
                             variant="elevated"
                             color="primary"
                             rounded="lg"
